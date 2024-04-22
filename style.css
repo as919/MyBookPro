@@ -1,0 +1,216 @@
+/* ----------------------------ALL PAGES---------------------------- */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    
+background-color: #000000;
+   padding: 0;
+    height: 100vh;
+
+}
+h2{
+    color: #000000;
+}
+
+/* CINTAINER-FLUID */
+.container-fluid.row {
+    /* height: 100vh; */
+   
+    height: inherit;
+}
+
+/* CONTENT */
+.content{
+    width: 83.4%;
+   
+}
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+    padding:  0%;
+  }
+  
+  .demo-bg {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
+
+
+/* MAIN MENU */
+.main-menu{
+   
+    padding: 0; 
+    width: 16%;
+    height: 100vh;
+     /* display: flex;
+  flex-direction: column;  */
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+.main-menu a{
+    text-decoration: none;  
+    color: rgb(255, 255, 255);  
+    display: block;
+   
+   /* width: 2rem;*/
+    width: auto;
+    padding: 33.5%;
+   /* margin: 1em 0em; */
+   
+}
+.main-menu a:hover{
+   color: #FFD95A;
+   
+}
+.main-menu a:active{
+    background-color: transparent;
+}
+
+.main-menu-item{
+    
+    width: auto;
+    padding: 20%;
+   margin: 1em 0em;
+  
+  /* border-bottom: 1px  solid #000;
+   border-top: 1px solid rgb(84, 99, 93);*/
+}
+
+
+
+
+
+
+
+
+/* ----------------------------INDEX/personal PAGE---------------------------- */
+fieldset{
+    margin: 2em auto;
+    padding-right: 1em;
+}
+.personal-page .content-inner {
+    margin: 5% 0%;
+    padding: 3em 2em 3em ;
+   
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    background-color:#ffffff
+   /* background-color:#161616c2;*/
+
+
+}
+
+.personal-page legend{
+    color:rgb(0, 0, 0);
+    
+}
+/* .personal-page .checkbox-cont{
+    /* padding: 1em 2em;
+    border: 2px solid #a8b1b1;
+  border-radius: 5px; */
+  /* display: flex;
+  justify-content: space-between; 
+} */
+.personal-page .checkbox-link{
+    text-decoration: none;  
+    padding: 1em 2em;
+    border: 2px solid #FFD95A;
+  border-radius: 5px;
+  display: block;
+  font-size: 20px;
+  color: #323232;
+}
+.personal-page .checkbox-link .quest-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+
+/* .personal-page .main-menu-item-personal.main-menu{
+    background-color: transparent;
+} */
+.personal-page .checkbox-cont label{
+    display: -webkit-inline-box;
+    align-items: center;
+    font-size:1em
+    
+   
+}
+.personal-page .checkbox-link .quest-cont .calText{
+   font-size: medium;
+}
+
+/* .personal-page .checkbox-link{
+
+} */
+
+
+
+
+
+
+/* ----------------------------MOBILE INDEX/personal PAGE---------------------------- */
+@media (max-width: 700px) {
+    .row{
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .personal-page .content{
+           width: 100%;
+        
+        }
+        
+        /* .personal-page .main-menu{ */
+            /* width: 100%; */
+            /* display: flex;
+            flex-direction:row; */
+        /* } */
+        
+        .personal-page .main-menu  {
+            width: auto;
+            height: 100%;
+        }
+        .personal-page .main-menu ul{
+            
+            width: 80%;
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row;
+            
+            flex-wrap: wrap;
+        }
+        .personal-page .main-menu li{
+            flex-grow: 1;
+            
+        }  
+    
+  }
+
+
+
+
+
+  
