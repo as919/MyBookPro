@@ -1,61 +1,72 @@
 /* ----------------------------ALL PAGES---------------------------- */
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body{
-    
-background-color: #000000;
-   padding: 0;
-    height: 100vh;
+html,
+body {
+
+    background-color: #000000;
+    padding: 0;
+    height: 100%;
+    /* was 100hv */
 
 }
-h2{
+
+h2 {
     color: #000000;
 }
+
+
 
 /* CINTAINER-FLUID */
 .container-fluid.row {
     /* height: 100vh; */
-   
+
     height: inherit;
 }
 
 /* CONTENT */
-.content{
+.content {
     width: 83.4%;
-   
+    padding-bottom: 10rem;
+
 }
+
 .demo-wrap {
     overflow: hidden;
     position: relative;
-    padding:  0%;
-  }
-  
-  .demo-bg {
+    padding: 0%;
+}
+
+.demo-bg {
     opacity: 0.4;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
-  }
-  
-  .demo-content {
+}
+
+.demo-content {
     position: relative;
-  }
+}
 
 
 /* MAIN MENU */
-.main-menu{
-   
-    padding: 0; 
+.main-menu {
+    background-color: black;
+   right: 0px;
+    position: fixed;
+    z-index: 9999;
+    padding: 0;
     width: 16%;
     height: 100vh;
-     /* display: flex;
+    /* display: flex;
   flex-direction: column;  */
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -63,32 +74,34 @@ ul{
 
 }
 
-.main-menu a{
-    text-decoration: none;  
-    color: rgb(255, 255, 255);  
+.main-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     display: block;
-   
-   /* width: 2rem;*/
+
+    /* width: 2rem;*/
     width: auto;
     padding: 33.5%;
-   /* margin: 1em 0em; */
-   
+    /* margin: 1em 0em; */
+
 }
-.main-menu a:hover{
-   color: #FFD95A;
-   
+
+.main-menu a:hover {
+    color: #FFD95A;
+
 }
-.main-menu a:active{
+
+.main-menu a:active {
     background-color: transparent;
 }
 
-.main-menu-item{
-    
+.main-menu-item {
+
     width: auto;
     padding: 20%;
-   margin: 1em 0em;
-  
-  /* border-bottom: 1px  solid #000;
+    margin: 1em 0em;
+
+    /* border-bottom: 1px  solid #000;
    border-top: 1px solid rgb(84, 99, 93);*/
 }
 
@@ -100,44 +113,49 @@ ul{
 
 
 /* ----------------------------INDEX/personal PAGE---------------------------- */
-fieldset{
+fieldset {
     margin: 2em auto;
-    padding-right: 1em;
+   
+}
+.updateBtn{
+    width: 100%;
 }
 .personal-page .content-inner {
     margin: 5% 0%;
-    padding: 3em 2em 3em ;
-   
+    padding: 3em 2em 3em;
+
     text-align: right;
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
-    background-color:#ffffff
-   /* background-color:#161616c2;*/
+    background-color: #ffffff
+        /* background-color:#161616c2;*/
 
 
 }
 
-.personal-page legend{
-    color:rgb(0, 0, 0);
-    
+.personal-page legend {
+    color: rgb(0, 0, 0);
+
 }
+
 /* .personal-page .checkbox-cont{
     /* padding: 1em 2em;
     border: 2px solid #a8b1b1;
   border-radius: 5px; */
-  /* display: flex;
+/* display: flex;
   justify-content: space-between; 
 } */
-.personal-page .checkbox-link{
-    text-decoration: none;  
+.personal-page .checkbox-link {
+    text-decoration: none;
     padding: 1em 2em;
     border: 2px solid #FFD95A;
-  border-radius: 5px;
-  display: block;
-  font-size: 20px;
-  color: #323232;
+    border-radius: 5px;
+    display: block;
+    font-size: 20px;
+    color: #323232;
 }
-.personal-page .checkbox-link .quest-cont{
+
+.personal-page .checkbox-link .quest-cont {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -148,15 +166,14 @@ fieldset{
 /* .personal-page .main-menu-item-personal.main-menu{
     background-color: transparent;
 } */
-.personal-page .checkbox-cont label{
+.personal-page .checkbox-cont label {
     display: -webkit-inline-box;
     align-items: center;
-    font-size:1em
-    
-   
+    font-size: 1em
 }
-.personal-page .checkbox-link .quest-cont .calText{
-   font-size: medium;
+
+.personal-page .checkbox-link .quest-cont .calText {
+    font-size: medium;
 }
 
 /* .personal-page .checkbox-link{
@@ -166,51 +183,135 @@ fieldset{
 
 
 
+/* --------------------------------- HOME PAGE-------------------------------------- */
 
+.home-page .content a,
+.home-page .content a:hover,
+.home-page .content a:active,
+.home-page .content a:visited {
+    text-decoration: none;
+    border-color: #323232;
+    color: #000000;
+}
+
+
+/* --------------------------------- CATEGORIES PAGE-------------------------------------- */
+.carousel-inner {
+    padding: 1em;
+    display: flex;
+}
+
+.carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/5);
+}
+
+.card {
+    margin: 0 .5em;
+}
+
+.imag-warapper {
+    max-width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: small;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #FFD95A !important;
+    border-color: #323232;
+    color: #000000;
+   
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #6c757d;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carouselTitle{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;    
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding-top: 2rem;
+    color: #ffffff;
+}
 
 /* ----------------------------MOBILE INDEX/personal PAGE---------------------------- */
 @media (max-width: 700px) {
-    .row{
-        
+    .row {
+
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-        .personal-page .content{
-           width: 100%;
-        
-        }
-        
-        /* .personal-page .main-menu{ */
-            /* width: 100%; */
-            /* display: flex;
-            flex-direction:row; */
-        /* } */
-        
-        .personal-page .main-menu  {
-            width: auto;
-            height: 100%;
-        }
-        .personal-page .main-menu ul{
-            
-            width: 80%;
-            display: inline-flex;
-            align-items: center;
-            flex-direction: row;
-            
-            flex-wrap: wrap;
-        }
-        .personal-page .main-menu li{
-            flex-grow: 1;
-            
-        }  
-    
-  }
+    .content {
+        width: 100%;
+
+    }
 
 
 
+    .main-menu {
+        bottom: 0px;
+        width: 100%;
+        height: 10rem;
+        /*100%*/
+
+    }
+
+    .main-menu ul {
+
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
 
 
-  
+    }
+
+    .main-menu li {
+        flex-grow: 1;
+
+    }
+
+    /*----CATEGORIES PAGE---- */
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 100%;
+    }
+
+}
